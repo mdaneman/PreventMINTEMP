@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "PreventMinTEMP"
-version = "0.1.0"
+version = "1.0.0"
 description = "Monitors hotend and bed temperatures and reheats printer when temperature gets close to MINTEMP limit for Prusa MKx printers"
 authors = [
     {name = "Mike Daneman", email = "mdaneman@yahoo.com"}
