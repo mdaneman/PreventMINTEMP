@@ -14,10 +14,9 @@ or manually using this URL:
 
 ## Configuration
 
-This plugin has 4 adjustable options:
+This plugin has 4 adjustable parameters:
 
 - **Heating Threshold** 	- this is temperature below which re-heating will be triggered.
 - **Reheat Target** 	- target temperature to which the tools will be re-heated.
 - **Monitor Period** 	- frequency of temperature monitoring in seconds.
-- **Don't Trigger Below** - temperature below which re-heating will not be triggered. This should be lower than the "Heating Threshold" and would generally be the temperature at which your printer tiggers the MINTEMP alarm
-
+- **Don't Trigger Below** - temperature below which re-heating will not be triggered. This should be lower than the **Heating Threshold** and would generally be the temperature at which your printer tiggers the MINTEMP alarm.
