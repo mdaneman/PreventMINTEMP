@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PreventMinTEMP"
+version = "0.1.0"
+description = "Monitors hotend and bed temperatures and reheats printer when temperature gets close to MINTEMP limit for Prusa MKx printers"
+authors = [
+    {name = "Mike Daneman", email = "mdaneman@yahoo.com"}
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+dynamic = [
+    "license"
+]
+
+requires-python = ">=3.7, <4"
+
+# any additional requirements (besides OctoPrint) should be listed here
+dependencies = []
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [
+    "octoprint_PreventMINTEMP",
+    "octoprint_PreventMINTEMP.*"
+]
+
+[project.entry-points."octoprint.plugin"]
+preventMINTEMP = "octoprint_PreventMINTEMP"
+
+[project.urls]
+Homepage = "https://github.com/mdaneman@yahoo.com/PreventMinTEMP"
+
+[project.optional-dependencies]
+develop = [
+    "go-task-bin"
+]

@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_PreventMINTEMP/templates *
+recursive-include octoprint_PreventMINTEMP/translations *
+recursive-include octoprint_PreventMINTEMP/static *

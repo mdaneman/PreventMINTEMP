@@ -1,0 +1,39 @@
+<h3>Prevent MINTEMP</h3>
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">{{ _('Heating Threshold') }}</label>
+        <div class="controls">
+            <span class="input-append">
+                <input type="number" step="any" min="5" max="50" class="input-mini text-left" data-bind="value: settings.plugins.preventMINTEMP.heat_thresh">
+                <span class="add-on">C</span>
+            </span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">{{ _('Reheat Target') }}</label>
+        <div class="controls">
+            <span class="input-append">
+                <input type="number" step="any" min="5" max="50" class="input-mini text-left" data-bind="value: settings.plugins.preventMINTEMP.heat_target">
+                <span class="add-on">C</span>
+            </span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">{{ _('Monitor Period') }}</label>
+        <div class="controls">
+            <span class="input-append">
+                <input type="number" step="1" min="5" class="input-mini text-left" data-bind="value: settings.plugins.preventMINTEMP.check_period">
+                <span class="add-on">sec</span>
+            </span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">{{ _("Don't Trigger Below") }}</label>
+        <div class="controls">
+            <span class="input-append">
+                <input type="number" step="any" min="5" class="input-mini text-left" data-bind="value: settings.plugins.preventMINTEMP.ignore_thresh">
+                <span class="add-on">C</span>
+            </span>
+        </div>
+    </div>
+</form>
