@@ -41,7 +41,7 @@ class PreventmintempPlugin(octoprint.plugin.StartupPlugin,
                     T = tdict[x]["actual"]
                     Ttarg = tdict[x]["target"]
                     if(Ttarg == 0 and T > ignore_thresh and T < heat_thresh):
-                            self._logger.info(f"Element {x} is below {heat_thresh}C temperature threshold. Heating element",x)
+                            self._logger.info(f"Element {x} is below {heat_thresh}C temperature threshold. Heating element {x}.")
                             all_at_target = False
                             heating = True
                             self._printer.set_temperature(elt_name,heat_target)
@@ -102,6 +102,9 @@ class PreventmintempPlugin(octoprint.plugin.StartupPlugin,
         return [
             dict(type="settings", custom_bindings=False)
         ]
+    
+    def is_template_autoescaped(self):
+        return True
 
     ##~~ AssetPlugin mixin
 
