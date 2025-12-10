@@ -4,7 +4,8 @@ I have a Prusa MK3S sitting in a cold garage. When the print is sitting idle and
 This error is meant to detect a bad thermister (which would typically report a negative temperature), but it tiggers unncessarily (in my view) even when the print is not printing just due to sitting in a cold environment.
 This simple plugin monitors the tool and bed temperatures and re-heats them to a set target temperature (40C by default) when they drop below a pre-set threshold temperature (12C by default). It will not trigger re-heating if the printer is printing or if the tool temperatures are already below the MINTEMP alarm threshold. This is generally determined by the printer firmware and should be set by adjusting the "Don't Trigger Below" parameter to match the printer setting. It's set to 10C by default, which is the default setting for Prusal MKx printers.
 
-## Setup
+Setup
+-----
 
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/main/bundledplugins/pluginmanager.html)
 or manually using this URL:
@@ -12,7 +13,8 @@ or manually using this URL:
     https://github.com/mdaneman@yahoo.com/PreventMinTEMP/archive/master.zip
 
 
-## Configuration
+Configuration
+-------------
 
 This plugin has 4 adjustable parameters:
 
