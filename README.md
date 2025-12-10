@@ -10,7 +10,7 @@ Setup
 Install via the bundled [Plugin Manager](https://docs.octoprint.org/en/main/bundledplugins/pluginmanager.html)
 or manually using this URL:
 
-    https://github.com/mdaneman@yahoo.com/PreventMinTEMP/archive/main.zip
+    [https://github.com/mdaneman/PreventMINTEMP/archive/refs/tags/v1.0.0.zip]
 
 
 Configuration
