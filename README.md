@@ -1,4 +1,4 @@
-## PreventMinTEMP
+## PreventMINTEMP
 
 I have a Prusa MK3S sitting in a cold garage. When the print is sitting idle and the garage temperature drops below 10C, the print tiggers a MINTEMP error and needs to be re-started to work again.
 This error is meant to detect a bad thermister (which would typically report a negative temperature), but it tiggers unncessarily (in my view) even when the print is not printing just due to sitting in a cold environment.
